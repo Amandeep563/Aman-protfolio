@@ -29,7 +29,7 @@ const Projects = () => {
       ],
     },
     {
-      title: "Portfolio Website",
+      title: "Movie App",
       description:
         "A clean, minimalistic portfolio website showcasing my projects and skills. Built with React and Tailwind CSS, featuring smooth animations and responsive design principles.",
       technologies: [
@@ -38,8 +38,8 @@ const Projects = () => {
         "JavaScript",
         "Responsive Design",
       ],
-      githubLink: "https://github.com/alexjohnson/portfolio",
-      liveLink: "https://alexjohnson-dev.netlify.app",
+      githubLink: "https://github.com/Amandeep563/movie-app",
+      liveLink: "https://movie-app-kappa-bice.vercel.app/",
       features: [
         "Smooth scroll navigation",
         "Contact form",
