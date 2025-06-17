@@ -31,18 +31,13 @@ const Projects = () => {
     {
       title: "Movie App",
       description:
-        "A clean, minimalistic portfolio website showcasing my projects and skills. Built with React and Tailwind CSS, featuring smooth animations and responsive design principles.",
-      technologies: [
-        "React",
-        "Tailwind CSS",
-        "JavaScript",
-        "Responsive Design",
-      ],
+        "A sleek and modern movie web app built using Vite + React and Tailwind CSS, powered by a movie API. This project allows users to discover trending movies with ease, offering a smooth UI/UX and responsive design optimized for all devices.",
+      technologies: ["React", "Tailwind CSS", "JavaScript", "API"],
       githubLink: "https://github.com/Amandeep563/movie-app",
       liveLink: "https://movie-app-kappa-bice.vercel.app/",
       features: [
-        "Smooth scroll navigation",
-        "Contact form",
+        "Dynamic movie listing with live data from an external API",
+        "Search and browse movies effortlessly",
         "Mobile optimization",
         "Modern design",
       ],
