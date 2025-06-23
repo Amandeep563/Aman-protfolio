@@ -9,9 +9,25 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-white"
+      className="relative min-h-screen flex items-center justify-center bg-[#f8fafc] w-full overflow-hidden"
     >
-      <div className="container-custom text-center">
+      {/* Bottom Fade Grid Background */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+            linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)
+          `,
+          backgroundSize: "20px 30px",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+          maskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+        }}
+      />
+      {/* Your Content/Components */}
+      <div className="container-custom text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
             Hello, I'm <span className="block text-gray-600">Amandeep</span>
