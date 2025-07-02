@@ -1,9 +1,20 @@
+import SplitText from "./ScreenText";
+import BlurText from "./BlueText";
+
 const Hero = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
+
+  const handleAnimationCompleted = () => {
+    console.log("Animation completed!");
   };
 
   return (
@@ -29,13 +40,36 @@ const Hero = () => {
       {/* Your Content/Components */}
       <div className="container-custom text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
+          {/* <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
             Hello, I'm <span className="block text-gray-600">Amandeep</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+          </h1> */}
+          <SplitText
+            text="Amandeep"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold text-center"
+            delay={100}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            onLetterAnimationComplete={handleAnimationComplete}
+          />
+          {/* <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
             A passionate fresher developer creating modern web experiences with
             clean code and thoughtful design.
-          </p>
+          </p> */}
+          <BlurText
+            text="A passionate fresher developer creating modern web experiences with clean code and thoughtful design"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationCompleted}
+            className="text-base sm:text-lg md:text-2xl mb-8 text-gray-600 font-medium drop-shadow-sm max-w-2xl mx-auto text-center"
+          />
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => scrollToSection("projects")}

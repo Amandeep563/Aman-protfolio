@@ -24,7 +24,7 @@ const Cursor = () => {
   return (
     <div
       id="cursor"
-      className="fixed top-0 left-0 h-[20px] w-[20px] bg-black rounded-full pointer-events-none z-50"
+      className="fixed top-0 left-0 h-[20px] w-[20px] bg-black rounded-full pointer-events-none z-50 hidden md:block"
     />
   );
 };
