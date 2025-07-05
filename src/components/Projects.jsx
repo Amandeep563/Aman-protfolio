@@ -1,34 +1,6 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Task Management App",
-      description:
-        "A modern task management application built with React and local storage. Features include task creation, editing, categorization, and real-time filtering with a clean, intuitive interface.",
-      technologies: ["React", "JavaScript", "CSS3", "Local Storage"],
-      githubLink: "https://github.com/alexjohnson/task-manager",
-      liveLink: "https://taskmanager-alex.netlify.app",
-      features: [
-        "Task CRUD operations",
-        "Category filtering",
-        "Responsive design",
-        "Local data persistence",
-      ],
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "A responsive weather application that displays current weather conditions and 5-day forecasts. Built with vanilla JavaScript and integrated with OpenWeatherMap API for real-time data.",
-      technologies: ["JavaScript", "HTML5", "CSS3", "Weather API"],
-      githubLink: "https://github.com/alexjohnson/weather-dashboard",
-      liveLink: "https://weather-alex.netlify.app",
-      features: [
-        "Real-time weather data",
-        "5-day forecast",
-        "Location search",
-        "Mobile-first design",
-      ],
-    },
-    {
       title: "Movie App",
       description:
         "A sleek and modern movie web app built using Vite + React and Tailwind CSS, powered by a movie API. This project allows users to discover trending movies with ease, offering a smooth UI/UX and responsive design optimized for all devices.",
@@ -40,6 +12,32 @@ const Projects = () => {
         "Search and browse movies effortlessly",
         "Mobile optimization",
         "Modern design",
+      ],
+    },
+    {
+      title: "Trip List App",
+      description:
+        "A responsive weather application that displays current weather conditions and 5-day forecasts. Built with vanilla JavaScript and integrated with OpenWeatherMap API for real-time data.",
+      technologies: ["React"],
+      githubLink: "https://github.com/Amandeep563/travel-list",
+      liveLink: "https://cool-duckanoo-1f2dca.netlify.app/",
+      features: [
+        "A simple and interactive travel checklist app built with React.",
+        "Features state management, dynamic item handling, and responsive design",
+        "Location search",
+      ],
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A personal portfolio website built with React and Tailwind CSS to showcase my web development projects and skills in a clean, responsive layout.",
+      technologies: ["React", "Tailwind CSS"],
+      githubLink: "https://github.com/Amandeep563/Aman-protfolio",
+      liveLink: "https://aman-protfolio-ashen.vercel.app/",
+      features: [
+        "A personal portfolio to showcase skills, projects, and contact info.",
+        "Designed with a clean, modern layout and fully responsive.",
+        "Includes project previews and social/contact links.",
       ],
     },
   ];
